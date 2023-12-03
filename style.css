@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+#box{
+    height: 300px;
+    width: 300px;
+    background: cyan;
+    border-radius: 50%;
+    border: 2px double black;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+
+@keyframes move {
+    from{
+        left: 0;
+        top: 0;
+        background-color: brown;
+    }    
+    to{
+        left: 90%;
+        top: 80%;
+        background-color: greenyellow;
+    }
+}
